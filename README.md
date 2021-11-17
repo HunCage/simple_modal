@@ -1,1 +1,2 @@
-# simple_modal
+# modal
+A simple modal built with HTML, CSS and JavaScript

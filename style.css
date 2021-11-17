@@ -1,0 +1,132 @@
+h3 {
+	color: red;
+	font-size: 20px;
+}
+
+.btn-open {
+	padding: 8px;
+	font-size: 20px;
+	background-color: tomato;
+	color: whitesmoke;
+	border-radius: 3px;
+	border: none;
+}
+
+.btn-open:hover {
+	background-color: whitesmoke;
+	color: tomato;
+	border: 2px solid tomato;
+}
+
+#modal {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	overflow: auto;
+	z-index: 1;
+	display: none;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+}
+
+.content {
+	position: relative;
+	background-color: #fff;
+	width: 50vw;
+	border: 2px solid #c2c2c2;
+	margin: auto auto;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: auto;
+	animation: slide 1s;
+}
+
+@keyframes slide {
+	from {
+		top: -55vh;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.modHeader {
+	padding: 2px 16px;
+	background-color: #48b2f8;
+	color: white;
+}
+
+.modBody {
+	margin: auto;
+	width: 80%;
+	padding: 18px;
+}
+
+p {
+	font-size: 18px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.2;
+	letter-spacing: 1.2px;
+}
+
+.fa-times {
+	padding-top: 4px;
+	float: right;
+	font-size: 28px;
+	color: red;
+	-webkit-text-stroke: 3px white;
+	-webkit-text-stroke-width: 0%;
+}
+
+.fa-times:hover {
+	cursor: pointer;
+	font-size: 24px;
+	color: white;
+	-webkit-text-stroke: 2px red;
+	-webkit-text-stroke-width: 0%;
+}
+
+.modFooter {
+	height: 100%;
+	padding: 2px 16px;
+	background-color: #48b2f8;
+	color: white;
+	display: flex;
+	justify-content: right;
+	padding: 4px 32px;
+}
+.modFooter .btn {
+	width: 72px;
+	height: 40px;
+	margin: 8px;
+	border-radius: 3px;
+	border: none;
+	font-size: 18px;
+	color: whitesmoke;
+}
+
+.modFooter .btn-ok {
+	background-color: rgb(0, 167, 0);
+}
+
+.modFooter .btn-ok:hover {
+	background-color: whitesmoke;
+	color: rgb(0, 167, 0);
+}
+
+.modFooter .btn-cancel {
+	background-color: rgb(219, 14, 14);
+	color: whitesmoke;
+}
+
+.modFooter .btn-cancel:hover {
+	background-color: whitesmoke;
+	color:rgb(219, 14, 14) ;
+}
+
